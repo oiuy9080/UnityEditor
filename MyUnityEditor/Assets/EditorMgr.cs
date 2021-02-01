@@ -2,13 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
+
 using UnityEngine.Serialization;
 
 [ExecuteInEditMode] // <- 실행중이 아니라도 모노비헤비어 주요함수가 호출.
                     //씬 Asset을 더블클릭해서, 씬을 로드할 때에는 Awake와 Start 함수가,
                     //인스펙터 등에서 컴포넌트의 변수 등을 변경하면 Update가 호출됨. 
                     //또한, OnGUI 에서 설치된 GUI가 에디터의 GUI 렌더링 사이클을 돌면서 표시되는식.
-
+[HelpURL("https://www.naver.com")]
 [AddComponentMenu("MyMenu/EditorMgr")] // <- 컴포넌트를 추가할수 있게 한다. 이렇게 할 경우 Script/ 에는 존재하지 않는다.
                                        //경로는 바꿔준것.
 
@@ -44,6 +46,9 @@ public class EditorMgr : MonoBehaviour
     {
         Debug.Log("Reset");
     }
+
+
+
 
 
 

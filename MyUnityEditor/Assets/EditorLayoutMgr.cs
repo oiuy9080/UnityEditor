@@ -6,8 +6,8 @@ using UnityEditor;
 public class EditorLayoutMgr : EditorWindow
 {
 
-[MenuItem("MyFunction/Example")]
-static void Open()
+    [MenuItem("MyFunction/Example")]
+    static void Open()
     {
         GetWindow<EditorLayoutMgr>();
     }
@@ -34,7 +34,11 @@ static void Open()
         }
 
         //EditorGUILayout.LabelField("Example Label");
+    }
 
+    [MenuItem("GameObject/TTTT")] // <- 커넥스트 메뉴랑 호출장소가 다르다.
+    static void TTT()
+    {
 
     }
 
